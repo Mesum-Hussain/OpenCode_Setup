@@ -138,5 +138,3 @@ echo "opencode/opencode.json" >> .gitignore
 ## 🤝 Contributing & Learning
 
 This project was built to show students and developers how to tap into production-grade agentic pipelines completely free of charge. If you find optimization tweaks for the `AGENTS.md` pipeline prompts, feel free to open a Pull Request!
-
-License: MIT. Go build something incredible. 🚀
