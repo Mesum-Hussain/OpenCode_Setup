@@ -11,8 +11,9 @@ An elite, **100% free-tier** AI developer setup designed for students, fast-pace
 | Feature | The Status Quo 🛑 | This Setup 🚀 |
 | --- | --- | --- |
 | **Cost** | Subscriptions or pay-per-token API drain | **$0.00** (Powered by Google's generous free tier) |
+| **Context Window** | Sinks under the weight of giant file trees | **1 Million Tokens** (Easily swallows massive repos) |
+| **Daily Limits** | Constantly hitting restrictive usage caps | **1,000 requests per day** (Virtually impossible for a single hacker to exhaust) |
 | **Memory** | Forgets everything the moment you clear terminal | **Persistent local vector index** via Hindsight |
-| **Context Limits** | Sinks under the weight of giant file trees | Dynamic recall pulls only what's relevant to the current bug |
 | **Velocity** | Manual copy-pasting of error logs | Autonomous self-correction & memory loops via MCP |
 
 ---
@@ -36,6 +37,29 @@ Before spinning up, make sure you have the following installed on your machine:
 
 ---
 
+## ⚙️ Core Configuration Step: Selecting the Model
+
+To unlock the full potential of this environment, you must explicitly point your local environment to the correct engine.
+
+### Why Gemini 3.1 Flash-Lite?
+
+* **1M Token Context Window:** You can load massive file trees, large boilerplate frameworks, and multiple documentation files simultaneously without running out of memory or confusing the agent.
+* **1,000 Free Requests/Day:** Google's free-tier threshold offers an aggressive pool of 1,000 requests daily. As a solo developer or student in an intense 24-48 hour hackathon, you can run continuously without hitting limits or spending a dime.
+
+### How to Select It in Opencode
+
+1. Launch the configuration settings or model registry by running:
+```bash
+opencode models
+
+```
+
+
+2. Navigate the interactive TUI menu using your arrow keys to find the Google provider section.
+3. Select **`gemini-3.1-flash-lite`** and set it as your primary model for both the **`plan`** and **`build`** agent execution layers.
+
+---
+
 ## ⚡ Quick Start (Automated Setup)
 
 Clone this repository and spin up the complete environment in seconds:
@@ -48,7 +72,7 @@ cd your-repo-name
 # 2. Inject your free Gemini API Key securely into your session
 export HINDSIGHT_API_LLM_API_KEY="your_free_gemini_api_key_here"
 
-# 3. Run the installer
+# 3. Run the installer script
 chmod +x setup_opencode.sh
 ./setup_opencode.sh
 
