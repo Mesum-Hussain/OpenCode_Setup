@@ -49,8 +49,8 @@ cd your-repo-name
 export HINDSIGHT_API_LLM_API_KEY="your_free_gemini_api_key_here"
 
 # 3. Run the installer
-chmod +x install.sh
-./install.sh
+chmod +x setup_opencode.sh
+./setup_opencode.sh
 
 ```
 
